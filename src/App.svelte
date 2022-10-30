@@ -79,5 +79,44 @@ main {
 border: solid #33cccc 1px;
   }
 
+  .animes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1500px;
+    margin: 100px auto 0 auto;
+
+  }
+
+  .anime {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 200px;
+    height: 390px;
+    margin: 0px 20px 40px 20px;
+    border: #fff solid 10px;
+    
+  }
+
+  .anime img {
+    width: 200px;
+    border-radius: 5px;
+  }
+
+  .anime h2 {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0 ;
+  }
+
+  .anime p {
+    font-size: 12px;
+color: #33cccc;
+font-weight: 700;
+margin: 5px 0 0 0;
+  }
+
 
 </style>
