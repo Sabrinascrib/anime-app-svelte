@@ -69,18 +69,43 @@ main {
     text-transform: uppercase;
   }
 
-  input {
-    height: 30px;
-    width: 200px;
-    border: solid #e0e0e0 1px;
-    background-color: #f1f1f1;
-    padding: 2px 10px;
-    border-radius: 5px;
+  form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 
-  input:focus {
-border: solid #33cccc 1px;
-  }
+
+        input { 
+          height: 30px;
+    width: 200px;
+    border: solid #000000 2px;
+    background-color: #fff;
+    padding: 2px 10px 2px 1px;
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+      }
+      
+      input:focus {
+        outline: none;
+      }
+
+      button {
+        height: 36px;
+    border: solid #000000 2px;
+    background-color: #fff;
+    padding: 2px 10px;
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        margin-left: 10px;
+      }
+
+      button svg {
+        font-size: 17px;
+      }
 
   .animes {
     display: flex;
