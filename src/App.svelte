@@ -3,13 +3,18 @@
   import { onMount } from 'svelte'
 	let name = '';
   let animes = []
-
   onMount(() => {
     fetch(`https://api.jikan.moe/v4/anime?q=${name}&sfw`)
       .then(response => response.json())
        .then(result => animes = result.data)
 	  // .then(result => console.log(result.data))
   })
+
+function handleOnSubmit() {
+      fetch(`https://api.jikan.moe/v4/anime?q=${name}&sfw`)
+      .then(response => response.json())
+       .then(result => animes = result.data)
+  }
 </script>
 
 <main>
@@ -17,7 +22,9 @@
   <div class="logo">
       <img src="./images/mie.png" alt="ramen logo" /> <h2>ramen <span> n' chill</span></h2>
   </div>
-  <input bind:value={name} placeholder="Search for an anime...">
+  <form on:submit|preventDefault={handleOnSubmit}>  <input type="text" name="name" bind:value={name} placeholder="Search for an anime...">
+    <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21l-4.486-4.494M19 10.5a8.5 8.5 0 1 1-17 0a8.5 8.5 0 0 1 17 0Z"/></svg></button>
+  </form>
 </nav>
 
 <div class="animes">
