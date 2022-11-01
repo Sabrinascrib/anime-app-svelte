@@ -32,8 +32,8 @@ function handleOnSubmit() {
 <div class="anime">
   <!-- <img src="anime.images.jpg.large_image_url" alt="{anime.title}"> -->
    <img src="./images/naruto-shippuden-group-i129089.jpg" alt="{anime.title}">
-<p>{anime.title_japanese}</p>
-  <h2>{anime.title}</h2></div>
+  <h2>{anime.title}</h2><p>{anime.aired.string}</p>
+</div>
 {/each}
 
 </div>
@@ -109,19 +109,20 @@ border: solid #33cccc 1px;
 
   .anime img {
     width: 200px;
-    border-radius: 5px;
+    border-radius: 10px;
   }
 
   .anime h2 {
-    font-size: 17px;
-    font-weight: 600;
-    margin: 0 ;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 10px 0 0 0 ;
+
   }
 
   .anime p {
-    font-size: 12px;
-color: #33cccc;
-font-weight: 700;
+    font-size: 10px;
+color: #686868;
+font-weight: 400;
 margin: 5px 0 0 0;
   }
 
