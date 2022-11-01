@@ -20,7 +20,7 @@ function handleOnSubmit() {
 <main>
 <nav>
   <div class="logo">
-      <img src="./images/mie.png" alt="ramen logo" /> <h2>ramen <span> n' chill</span></h2>
+       <h2>ramen n' chill</h2>
   </div>
   <form on:submit|preventDefault={handleOnSubmit}>  <input type="text" name="name" bind:value={name} placeholder="Search for an anime...">
     <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21l-4.486-4.494M19 10.5a8.5 8.5 0 1 1-17 0a8.5 8.5 0 0 1 17 0Z"/></svg></button>
@@ -61,16 +61,12 @@ main {
     align-items: center;
   }
 
-  .logo img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-  }
 
-  .logo h2 span {
-    color: #33cccc;
-    font-style: italic;
+
+  .logo h2  {
+    color: #000;
+    font-weight: 300;
+    text-transform: uppercase;
   }
 
   input {
