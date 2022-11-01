@@ -38,6 +38,10 @@ function handleOnSubmit() {
 
 </div>
 
+<footer> 
+  Build by anime lover <a href="https://github.com/Sabrinascrib/anime-app-svelte">Sabrina Abrodi</a>
+</footer>
+
 </main>
 <style>
 
@@ -120,7 +124,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     max-width: 1500px;
-    margin: 40px auto 0 auto;
+    margin: 40px auto 100px auto;
 
   }
 
@@ -152,6 +156,22 @@ main {
 color: #686868;
 font-weight: 400;
 margin: 5px 0 0 0;
+  }
+
+  footer {
+    text-align: center;
+    color: #999999;
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  footer a {
+    color: #999999;
+  }
+
+  footer a:hover {
+    color: #747474;
+    transition-duration: 0.2s;
   }
 
 
