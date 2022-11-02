@@ -30,8 +30,7 @@ function handleOnSubmit() {
 <div class="animes">
 {#each animes as anime (anime.mal_id)}
 <div class="anime">
-  <!-- <img src="anime.images.jpg.large_image_url" alt="{anime.title}"> -->
-   <img src="./images/naruto-shippuden-group-i129089.jpg" alt="{anime.title}">
+  <img src="anime.images.jpg. image_url" alt="{anime.title}">
   <h2>{anime.title}</h2><p>{anime.aired.string}</p>
 </div>
 {/each}
@@ -39,7 +38,7 @@ function handleOnSubmit() {
 </div>
 
 <footer> 
-  Build by anime lover <a href="https://github.com/Sabrinascrib/anime-app-svelte">Sabrina Abrodi</a>
+  Build by anime lover <a  target="_blank" href="https://github.com/Sabrinascrib/anime-app-svelte">Sabrina Abrodi</a>
 </footer>
 
 </main>
