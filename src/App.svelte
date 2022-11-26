@@ -30,7 +30,7 @@ function handleOnSubmit() {
 <div class="animes">
 {#each animes as anime (anime.mal_id)}
 <div class="anime">
-  <img src="anime.images.jpg. image_url" alt="{anime.title}">
+  <img src="{anime.images.jpg.image_url}" alt="{anime.title}">
   <h2>{anime.title}</h2><p>{anime.aired.string}</p>
 </div>
 {/each}
